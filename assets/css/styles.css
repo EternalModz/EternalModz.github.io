@@ -1,0 +1,50 @@
+.responsive-buttons {
+  margin-top: 80px;
+  padding: 0 5%;
+  text-align: center;
+}
+
+.main_button {
+  height: 50px;
+  width: 100%;
+  max-width: 750px;
+  font-size: 22px;
+  background-color: #323232;
+  color: white;
+  border: 1px solid rgb(225, 225, 225);
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px auto;
+  display: block;
+  transition: background-color 0.3s, border-color 0.3s;
+  font-family: "Minecraftia", monospace;
+}
+
+.main_button:hover {
+  background-color: #3c8728;
+  border-color: rgb(225, 225, 225);
+}
+
+html, body {
+  margin: 0;
+  overflow: hidden;
+  height: 100vh;
+}
+
+#panorama-container {
+  display: flex;
+  width: 200%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.panorama {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('your-panorama.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
