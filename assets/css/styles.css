@@ -1,50 +1,158 @@
-.responsive-buttons {
-  margin-top: 80px;
-  padding: 0 5%;
-  text-align: center;
+:root {
+  color-scheme: dark;
 }
 
-.main_button {
-  height: 50px;
-  width: 100%;
-  max-width: 750px;
-  font-size: 22px;
-  background-color: #323232;
-  color: white;
-  border: 1px solid rgb(225, 225, 225);
-  border-radius: 4px;
-  cursor: pointer;
-  margin: 10px auto;
-  display: block;
-  transition: background-color 0.3s, border-color 0.3s;
-  font-family: "Minecraftia", monospace;
+html {
+  min-height: 100%;
 }
 
-.main_button:hover {
-  background-color: #3c8728;
-  border-color: rgb(225, 225, 225);
-}
-
-html, body {
+body {
+  min-height: 100vh;
   margin: 0;
-  overflow: hidden;
-  height: 100vh;
 }
 
-#panorama-container {
+.home-page {
+  background: #141414;
+}
+
+.site-navbar {
+  --bs-navbar-padding-y: 0.65rem;
+  background: rgb(8 8 8 / 94%);
+  border-bottom: 1px solid rgb(255 255 255 / 8%);
+  backdrop-filter: blur(12px);
+}
+
+.site-brand {
+  margin-right: 1.5rem;
+  font-family: "Press Start 2P", monospace;
+  font-size: clamp(0.72rem, 1.8vw, 0.9rem);
+  line-height: 1.4;
+}
+
+.site-navbar .navbar-toggler {
+  padding: 0.4rem 0.5rem;
+  border: 1px solid rgb(255 255 255 / 12%);
+  border-radius: 0.6rem;
+  color: rgb(255 255 255 / 74%);
+  caret-color: transparent;
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.site-navbar .navbar-toggler:hover {
+  border-color: rgb(255 255 255 / 20%);
+  background: rgb(255 255 255 / 5%);
+}
+
+.site-navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.site-navbar .navbar-toggler:focus-visible {
+  outline: 2px solid rgb(255 255 255 / 34%);
+  outline-offset: 2px;
+}
+
+.site-navbar .navbar-toggler-icon {
+  display: block;
+  caret-color: transparent;
+  pointer-events: none;
+  user-select: none;
+}
+
+.site-nav {
+  gap: 0.15rem;
+}
+
+.site-nav-link {
   display: flex;
-  width: 200%;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.55rem 0.75rem !important;
+  border-radius: 0.5rem;
+  color: rgb(255 255 255 / 68%);
+  font-size: 0.95rem;
+  line-height: 1.25;
+  transition: color 150ms ease, background-color 150ms ease;
 }
 
-.panorama {
-  width: 100vw;
-  height: 100vh;
-  background-image: url('your-panorama.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+.site-nav-link .icon {
+  width: 1.1rem;
+  flex: 0 0 1.1rem;
+  text-align: center;
+  opacity: 0.8;
 }
 
+.site-nav-link:hover,
+.site-nav-link:focus-visible {
+  color: #fff;
+  background: rgb(255 255 255 / 7%);
+}
+
+.site-nav-link:focus-visible {
+  outline: 2px solid rgb(255 255 255 / 38%);
+  outline-offset: 2px;
+}
+
+.home-hero {
+  padding: clamp(4rem, 10vw, 8rem) 1rem;
+}
+
+.home-title {
+  margin-bottom: 1.5rem;
+  font-family: "Press Start 2P", monospace;
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  line-height: 1.25;
+}
+
+.home-copy {
+  margin: 0;
+  font-size: clamp(1.1rem, 2.4vw, 1.5625rem);
+  line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+  .site-nav .nav-item + .nav-item {
+    padding-left: 0.15rem;
+    margin-left: 0.15rem;
+    border-left: 1px solid rgb(255 255 255 / 10%);
+  }
+}
+
+@media (max-width: 767.98px) {
+  .site-brand {
+    margin-right: 0.75rem;
+  }
+
+  .site-navbar .navbar-collapse {
+    margin-top: 0.5rem;
+  }
+
+  .site-nav {
+    gap: 0.2rem;
+    padding: 0.35rem;
+    margin-bottom: 0.2rem;
+    border: 1px solid rgb(255 255 255 / 7%);
+    border-radius: 0.75rem;
+    background: rgb(255 255 255 / 2.5%);
+  }
+
+  .site-nav .nav-item + .nav-item {
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+
+  .site-nav-link {
+    width: 100%;
+    padding: 0.7rem 0.65rem !important;
+    border-radius: 0.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-nav-link {
+    transition: none;
+  }
+}
