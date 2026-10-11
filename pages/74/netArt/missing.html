@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#000000"><title>Resource Unavailable</title>
+<link rel="stylesheet" href="css/app.css"></head>
+<body class="missing-resource" data-page="missing">
+<main class="missing-stage">
+  <span>404 / RESOURCE UNAVAILABLE</span>
+  <strong data-missing-ref>requested object</strong>
+  <p>resource has never existed</p>
+  <button type="button" data-return>return</button>
+</main>
+<script>
+  (()=>{
+    const q=new URLSearchParams(location.search);
+    const ref=document.querySelector('[data-missing-ref]');
+    if(ref) ref.textContent=q.get('ref')||'requested object';
+    document.querySelector('[data-return]')?.addEventListener('click',()=>history.back());
+  })();
+</script>
+</body></html>

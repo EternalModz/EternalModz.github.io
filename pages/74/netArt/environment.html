@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="#020304" name="theme-color"/>
+<title>Environmental Control</title>
+<link rel="stylesheet" href="css/app.css"></head>
+<body class="scene-system scene-environment" data-page="environment">
+<div class="system-shell scene-shell" id="ui">
+<header class="scene-header">
+<div><div class="page-marker" data-page-label=""></div><h1>ENVIRONMENTAL CONTROL</h1><p>atmosphere / facility conditions / autonomous regulation</p></div>
+<div class="scene-header-right"><div class="assistant-presence"><span class="status-dot"></span><span data-assistant-presence="">assistance service / online</span></div><div class="scene-clock" data-scene-clock="">--:--:--</div></div>
+</header>
+<div class="assistant-message" data-assistant-message=""></div>
+<main class="environment-layout scene-content">
+<section class="scene-card climate-card">
+<div class="scene-card-head"><div><span class="card-kicker">EXTERIOR CONDITIONS</span><strong>regional atmosphere</strong></div><span class="scene-state"><i></i> stable</span></div>
+<div class="climate-main"><div class="climate-temp"><b data-env-temp="">17.2</b><span>C</span></div><div class="climate-copy"><strong>CLEAR / LOW WIND</strong><span>surface model synchronized</span></div></div>
+<div aria-hidden="true" class="climate-line"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+<div class="climate-stats"><div><span>pressure</span><b data-env-pressure="">1016.4 hPa</b></div><div><span>humidity</span><b data-env-humidity="">41%</b></div><div><span>wind</span><b data-env-wind="">8.4 km/h</b></div><div><span>air quality</span><b>nominal</b></div></div>
+</section>
+<section class="scene-card airflow-card">
+<div class="scene-card-head"><div><span class="card-kicker">FACILITY AIRFLOW</span><strong>circulation mesh</strong></div><span>auto</span></div>
+<div aria-hidden="true" class="airflow-visual"><div class="air-ring ar1"></div><div class="air-ring ar2"></div><div class="air-ring ar3"></div><div class="air-core">AIR<br/>EXCHANGE<br/><b data-air-exchange="">62%</b></div></div>
+<div class="airflow-meta"><span>intake 18.7 C</span><span>return 20.1 C</span><span>delta 1.4 C</span></div>
+</section>
+<section class="scene-card rooms-card">
+<div class="scene-card-head"><div><span class="card-kicker">INTERIOR ZONES</span><strong>occupancy / pressure / air</strong></div><span>08 sensors</span></div>
+<div class="room-grid">
+<button class="room-cell" data-room="04"><span>ROOM 04</span><b>0</b><small>occupancy</small><i>18.3 C / nominal</i></button>
+<button class="room-cell" data-room="07"><span>ROOM 07</span><b>0</b><small>occupancy</small><i>18.6 C / nominal</i></button>
+<button class="room-cell" data-room="11"><span>ROOM 11</span><b>0</b><small>occupancy</small><i>18.4 C / nominal</i></button>
+<button class="room-cell anomaly-room" data-room="18"><span>ROOM 18</span><b data-room18-occupancy="">0</b><small>occupancy</small><i data-room18-detail="">18.2 C / nominal</i><em data-room18-respiratory="">respiratory sources 0</em></button>
+<button class="room-cell" data-room="22"><span>ROOM 22</span><b>0</b><small>occupancy</small><i>18.5 C / sealed</i></button>
+<button class="room-cell" data-room="31"><span>ROOM 31</span><b>0</b><small>occupancy</small><i>17.9 C / nominal</i></button>
+</div>
+</section>
+<section class="scene-card environment-events-card">
+<div class="scene-card-head"><div><span class="card-kicker">REGULATION EVENTS</span><strong>background control</strong></div><span>rolling</span></div>
+<div class="environment-feed" data-environment-feed=""></div>
+</section>
+<a aria-live="polite" class="scene-card scene-route-card env-route" data-flow-exit="communications" data-page="communications" hidden="" href="communications.html">
+<span class="card-kicker">INCOMING SYSTEM TRAFFIC</span><strong>COMMUNICATIONS NETWORK</strong><p>delivery queues / relay traffic / automated services</p><span class="route-open">inspect traffic</span>
+</a>
+</main>
+<div aria-hidden="true" class="telemetry-strip"><span>network <b data-telemetry="network">--</b></span><span>power <b data-telemetry="power">--</b></span><span>nodes <b data-telemetry="nodes">--</b></span><span>jobs <b data-telemetry="jobs">--</b></span><span>session <b data-telemetry="session">--:--:--</b></span></div>
+<div id="scan"></div>
+</div>
+<script src="js/core.js"></script><script src="js/scene-environment.js"></script>
+<script src="js/systems.js"></script>
+<script src="js/runtime.js"></script>
+</body>
+</html>

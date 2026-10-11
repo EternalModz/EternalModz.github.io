@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta content="#020304" name="theme-color"/>
+<title>Autonomous Maintenance</title>
+<link rel="stylesheet" href="css/app.css"></head>
+<body class="scene-system scene-maintenance" data-page="maintenance">
+<div class="system-shell scene-shell" id="ui">
+<header class="scene-header">
+<div><div class="page-marker" data-page-label=""></div><h1>AUTONOMOUS MAINTENANCE</h1><p>mechanical service / power dependencies / unattended repair queue</p></div>
+<div class="scene-header-right"><div class="scene-clock" data-scene-clock="">--:--:--</div><div class="assistant-presence"><span class="status-dot"></span><span data-assistant-presence="">assistance service / online</span></div></div>
+</header>
+<div class="assistant-message" data-assistant-message=""></div>
+<main class="scene-content story-layout maintenance-layout">
+<section class="scene-card story-card maintenance-jobs-card">
+<div class="scene-card-head"><div><span class="card-kicker">ACTIVE JOB QUEUE</span><strong>autonomous service</strong></div><span data-maint-job-count="">34 active</span></div>
+<div class="job-list story-scroll" data-job-list="">
+<button class="job-row active" data-job="cooling07"><span>JOB 38142</span><strong>COOLING LOOP 07 / FLOW REGULATION</strong><em>running</em></button>
+<button class="job-row" data-job="relay12"><span>JOB 38143</span><strong>GRID RELAY 12 / CONTACT TEST</strong><em>queued</em></button>
+<button class="job-row" data-job="archive03"><span>JOB 38144</span><strong>STORAGE ARRAY 03 / HEAD PARK</strong><em>queued</em></button>
+<button class="job-row" data-job="camera18"><span>JOB 38145</span><strong>CAM 18 / ACTUATOR SERVICE</strong><em data-camera-job-state="">unavailable</em></button>
+<button class="job-row" data-job="vent22"><span>JOB 38146</span><strong>VENT ZONE 22 / PRESSURE BALANCE</strong><em>queued</em></button>
+<button class="job-row" data-job="occupancy" hidden=""><span>JOB 889104</span><strong>PRESERVE OCCUPANCY</strong><em>active</em></button>
+</div>
+</section>
+<section class="scene-card story-card maintenance-machine-card">
+<div class="scene-card-head"><div><span class="card-kicker">SELECTED MACHINE</span><strong data-machine-title="">COOLING LOOP 07</strong></div><span data-machine-state="">running</span></div>
+<div aria-hidden="true" class="machine-visual"><div class="machine-ring mr1"></div><div class="machine-ring mr2"></div><div class="machine-core" data-machine-core="">PUMP<br/>ACTIVE</div></div>
+<dl class="data-list">
+<div><dt>grid power</dt><dd data-machine-power="">online</dd></div>
+<div><dt>controller</dt><dd data-machine-controller="">online</dd></div>
+<div><dt>motor</dt><dd data-machine-motor="">active</dd></div>
+<div><dt>flow</dt><dd data-machine-flow="">11.7 L/min</dd></div>
+</dl>
+</section>
+<section class="scene-card story-card maintenance-sequence-card">
+<div class="scene-card-head"><div><span class="card-kicker">CAUSAL SEQUENCE</span><strong>activation path</strong></div><span data-sequence-state="">nominal</span></div>
+<div class="sequence-list" data-sequence-list="">
+<div class="sequence-step done"><i></i><span>relay energized</span><b>01</b></div>
+<div class="sequence-step done"><i></i><span>controller handshake</span><b>02</b></div>
+<div class="sequence-step done"><i></i><span>motor start</span><b>03</b></div>
+<div class="sequence-step done"><i></i><span>flow stable</span><b>04</b></div>
+</div>
+</section>
+<section class="scene-card story-card maintenance-assistant-card">
+<div class="scene-card-head"><div><span class="card-kicker">ASSISTANCE SERVICE</span><strong>maintenance observer</strong></div><span>watching</span></div>
+<div class="assistant-observation" data-maint-observation="">Mechanical sequences are consistent with their power and control dependencies.</div>
+</section>
+<a aria-live="polite" class="scene-card scene-route-card maintenance-route-card" data-flow-exit="population" data-page="population" hidden="" href="population.html"><span class="card-kicker">SYSTEM DEPENDENCY</span><strong>POPULATION REGISTRY</strong><p>occupancy records / dormant identities / active presence</p><span class="route-open">inspect registry</span></a>
+</main>
+<div aria-hidden="true" class="telemetry-strip"><span>network <b data-telemetry="network">--</b></span><span>power <b data-telemetry="power">--</b></span><span>nodes <b data-telemetry="nodes">--</b></span><span>jobs <b data-telemetry="jobs">--</b></span><span>session <b data-telemetry="session">--:--:--</b></span></div>
+<div id="scan"></div>
+</div>
+<script src="js/core.js"></script><script src="js/scene-maintenance.js"></script>
+<script src="js/systems.js"></script>
+<script src="js/runtime.js"></script>
+</body>
+</html>

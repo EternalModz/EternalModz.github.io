@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta content="#020304" name="theme-color"/>
+<title>Observation Network</title>
+<link rel="stylesheet" href="css/app.css"></head>
+<body class="scene-system scene-cameras" data-page="cameras">
+<div class="system-shell scene-shell" id="ui">
+<header class="scene-header">
+<div><div class="page-marker" data-page-label=""></div><h1>OBSERVATION NETWORK</h1><p>visual sensors / facility optics / archived control paths</p></div>
+<div class="scene-header-right"><div class="scene-clock" data-scene-clock="">--:--:--</div><div class="assistant-presence"><span class="status-dot"></span><span data-assistant-presence="">assistance service / online</span></div></div>
+</header>
+<div class="assistant-message" data-assistant-message=""></div>
+<main class="scene-content story-layout cameras-layout">
+<section class="scene-card story-card camera-wall-card">
+<div class="scene-card-head"><div><span class="card-kicker">FACILITY OPTICS</span><strong>camera wall</strong></div><span>06 endpoints</span></div>
+<div class="camera-grid">
+<button class="story-button camera-feed" data-camera="04"><div class="feed-visual"></div><span class="feed-label">CAM 04 / NORTH HALL</span><span class="feed-status">ONLINE / OCCUPANCY 0</span><span class="feed-count">VIEWERS 1</span></button>
+<button class="story-button camera-feed" data-camera="07"><div class="feed-visual"></div><span class="feed-label">CAM 07 / SERVICE LIFT</span><span class="feed-status">ONLINE / OCCUPANCY 0</span><span class="feed-count">VIEWERS 1</span></button>
+<button class="story-button camera-feed dead" data-camera="18"><div class="feed-visual"></div><span class="feed-label">CAM 18 / STORAGE CORRIDOR</span><span class="feed-status" data-cam18-status="">OFFLINE</span><span class="feed-count viewer-count" data-cam18-viewers="">VIEWERS 1</span></button>
+<button class="story-button camera-feed" data-camera="22"><div class="feed-visual"></div><span class="feed-label">CAM 22 / SERVER ACCESS</span><span class="feed-status">DEGRADED / OCCUPANCY 0</span><span class="feed-count">VIEWERS 1</span></button>
+<button class="story-button camera-feed dead" data-camera="31"><div class="feed-visual"></div><span class="feed-label">CAM 31 / PARKING EAST</span><span class="feed-status">NO SIGNAL</span><span class="feed-count">ARCHIVE ONLY</span></button>
+<button class="story-button camera-feed" data-camera="42"><div class="feed-visual"></div><span class="feed-label">CAM 42 / COOLING BAY</span><span class="feed-status">ONLINE / OCCUPANCY 0</span><span class="feed-count">VIEWERS 1</span></button>
+</div>
+</section>
+<section class="scene-card story-card camera-diagnostic-card camera-diagnostics">
+<div class="scene-card-head"><div><span class="card-kicker">SELECTED ENDPOINT</span><strong data-camera-title="">CAM 04</strong></div><span data-camera-state="">online</span></div>
+<dl class="data-list">
+<div><dt>power input</dt><dd data-camera-power="">23.8 V</dd></div>
+<div><dt>control board</dt><dd data-camera-board="">online</dd></div>
+<div><dt>network</dt><dd data-camera-network="">connected</dd></div>
+<div><dt>pan</dt><dd data-camera-pan="">+00°</dd></div>
+<div><dt>tracking</dt><dd data-camera-tracking="">disabled</dd></div>
+</dl>
+<div class="muted-note" data-camera-note="" style="margin-top:12px">Endpoint responding within expected parameters.</div>
+</section>
+<section class="scene-card story-card camera-control-card">
+<div class="scene-card-head"><div><span class="card-kicker">CONTROL PATH</span><strong>optical actuator</strong></div><span>manual</span></div>
+<div class="camera-controls"><button aria-label="Pan left" data-pan="-1">←</button><button aria-label="Center camera" data-center="">●</button><button aria-label="Pan right" data-pan="1">→</button></div>
+<div class="muted-note" style="margin-top:13px">Controls are ignored by endpoints without a control board.</div>
+</section>
+<section class="scene-card story-card camera-assistant-card">
+<div class="scene-card-head"><div><span class="card-kicker">ASSISTANCE SERVICE</span><strong>visual diagnostics</strong></div><span>linked</span></div>
+<div class="assistant-observation" data-camera-observation="">Optical endpoints are operating within historical tolerances.</div>
+</section>
+<a aria-live="polite" class="scene-card scene-route-card camera-route-card" data-flow-exit="maintenance" data-page="maintenance" hidden="" href="maintenance.html"><span class="card-kicker">CONTROL DEPENDENCY</span><strong>AUTONOMOUS MAINTENANCE</strong><p>power / motors / cooling / physical service records</p><span class="route-open">inspect hardware</span></a>
+</main>
+<div aria-hidden="true" class="telemetry-strip"><span>network <b data-telemetry="network">--</b></span><span>power <b data-telemetry="power">--</b></span><span>nodes <b data-telemetry="nodes">--</b></span><span>jobs <b data-telemetry="jobs">--</b></span><span>session <b data-telemetry="session">--:--:--</b></span></div>
+<div id="scan"></div>
+</div>
+<script src="js/core.js"></script><script src="js/scene-cameras.js"></script>
+<script src="js/systems.js"></script>
+<script src="js/runtime.js"></script>
+</body>
+</html>

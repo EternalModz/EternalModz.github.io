@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta content="#000000" name="theme-color"/>
+<title>Current Session</title>
+<link rel="stylesheet" href="css/app.css"></head>
+<body class="scene-session" data-page="session">
+<div class="system-shell session-shell" id="ui">
+<div class="page-marker" data-page-label=""></div>
+<div class="assistant-presence session-assistant"><span class="status-dot"></span><span data-assistant-presence="">assistance service / online</span></div>
+<div class="assistant-message" data-assistant-message=""></div>
+<main class="session-terminal">
+<div class="session-heading"><span>CURRENT CONNECTION</span><strong data-session-id-final="">--------</strong></div>
+<dl class="session-summary">
+<div><dt>duration</dt><dd data-session-duration="">--:--:--</dd></div>
+<div><dt>systems traversed</dt><dd data-pages-count="">0</dd></div>
+<div><dt>recorded interactions</dt><dd data-interaction-count="">0</dd></div>
+<div><dt>active connections</dt><dd data-final-connections="">1</dd></div>
+<div><dt>assistance service</dt><dd data-assistant-final-state="">online</dd></div>
+</dl>
+<div class="route-trace" data-route-trace=""></div>
+<button class="terminate-button" data-terminate="" type="button">TERMINATE CONNECTION</button>
+<div class="shutdown-sequence" data-shutdown-sequence="" hidden=""></div>
+<div class="post-shutdown" data-post-shutdown="" hidden=""></div>
+</main>
+<div id="scan"></div>
+</div>
+<script src="js/core.js"></script>
+<script src="js/systems.js"></script><script src="js/scene-session.js"></script>
+<script src="js/runtime.js"></script>
+</body></html>

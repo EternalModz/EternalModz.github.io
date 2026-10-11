@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta content="#020304" name="theme-color"/>
+<title>Communications Network</title>
+<link rel="stylesheet" href="css/app.css"></head>
+<body class="scene-system scene-communications" data-page="communications">
+<div class="system-shell scene-shell" id="ui">
+<header class="scene-header">
+<div><div class="page-marker" data-page-label=""></div><h1>COMMUNICATIONS NETWORK</h1><p>message relay / dormant platforms / machine traffic</p></div>
+<div class="scene-header-right"><div class="assistant-presence"><span class="status-dot"></span><span data-assistant-presence="">assistance service / online</span></div><div class="scene-clock" data-scene-clock="">--:--:--</div></div>
+</header>
+<div class="assistant-message" data-assistant-message=""></div>
+<main class="communications-layout scene-content">
+<section class="scene-card v14-comms-stage" aria-label="Communication relay map">
+  <div class="stage-title">LIVE RELAY MAP</div>
+  <div class="stage-sub">machine traffic is automatic / human endpoints inactive</div>
+  <div class="v14-comm-map" aria-hidden="true">
+    <div class="v14-link l1"></div><div class="v14-link l2"></div><div class="v14-link deadlink"></div>
+    <div class="v14-comm-node machine1"><b>RELAY-04</b><small>ONLINE / ROUTING</small></div>
+    <div class="v14-comm-node machine2"><b>INDEX</b><small>ONLINE / VERIFIED</small></div>
+    <div class="v14-comm-node machine3"><b>AUTO-NET</b><small>ONLINE / MACHINE TRAFFIC</small></div>
+    <div class="v14-comm-node dead"><b>ACCOUNT-204991</b><small>TERMINATED / 61 YEARS</small></div>
+    <div class="v14-impossible-signal"></div>
+  </div>
+</section>
+<section class="scene-card comm-overview-card">
+<div class="scene-card-head"><div><span class="card-kicker">MESSAGE FABRIC</span><strong>persistent delivery services</strong></div><span class="scene-state"><i></i> routing</span></div>
+<div aria-hidden="true" class="comm-wave"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+<div class="comm-stats"><div><span>queued messages</span><b data-queue-count="">184,204,771</b></div><div><span>relay success</span><b>99.14%</b></div><div><span>active human users</span><b class="human-count" data-human-count="">0</b></div><div><span>automated accounts</span><b>8,194,201</b></div></div>
+</section>
+<section class="scene-card platform-card">
+<div class="scene-card-head"><div><span class="card-kicker">LEGACY SOCIAL SERVICE</span><strong>public activity stream</strong></div><span>unmoderated</span></div>
+<dl class="data-list compact platform-data"><div><dt>posts / 24h</dt><dd>18,291,441</dd></div><div><dt>verified human authors</dt><dd>0</dd></div><div><dt>moderation queue</dt><dd>91,302,144</dd></div><div><dt>moderators online</dt><dd>0</dd></div></dl>
+<div class="bot-stream"><p><span>@daily_weather_341</span> clear conditions expected / generated 04:20</p><p><span>@memories_today</span> this day twelve years ago / recipient unavailable</p><p><span>@support_auto</span> your request remains important to us / queue position 72044192</p></div>
+</section>
+<section class="scene-card delivery-card">
+<div class="scene-card-head"><div><span class="card-kicker">DELIVERY QUEUE</span><strong>recent transactions</strong></div><span>live</span></div>
+<div class="delivery-feed" data-delivery-feed=""></div>
+<button class="delivery-anomaly" data-delivery-anomaly="" hidden="">
+<span>DELIVERED</span><strong>ACCOUNT-204991</strong><small>recipient terminated 61 years ago</small><em>inspect receipt</em>
+</button>
+</section>
+<section class="scene-card machine-dialogue-card">
+<div class="scene-card-head"><div><span class="card-kicker">SERVICE EXCHANGE</span><strong>machine-to-machine traffic</strong></div><span>unencrypted local</span></div>
+<div class="machine-dialogue" data-machine-dialogue="">
+<p><time>--:--:--</time><b>RELAY-04 -&gt; INDEX</b><span>requesting queue integrity</span></p>
+<p><time>--:--:--</time><b>INDEX -&gt; RELAY-04</b><span>integrity nominal</span></p>
+</div>
+</section>
+<section class="scene-card dead-letter-card">
+<div class="scene-card-head"><div><span class="card-kicker">DEAD LETTER INDEX</span><strong>undeliverable human traffic</strong></div><span>61.8 TB</span></div>
+<div class="dead-letter-list"><button data-fragment="1"><span>HOME DELIVERY</span><small>package arrival notice / recipient unavailable</small></button><button data-fragment="2"><span>CALENDAR</span><small>birthday reminder / contact inactive</small></button><button data-fragment="3"><span>VOICE RELAY</span><small>audio fragment / 18% recoverable</small></button><button data-fragment="4"><span>SUPPORT</span><small>case resolved automatically / no requester response</small></button></div>
+</section>
+<a aria-live="polite" class="scene-card scene-route-card comm-route" data-flow-exit="archive" data-page="archive" hidden="" href="archive.html"><span class="card-kicker">RECOVERED REFERENCE</span><strong>HUMAN ARCHIVE</strong><p data-archive-route-copy="">records / storage / personal remnants</p><span class="route-open">open archive</span></a>
+</main>
+<div aria-hidden="true" class="telemetry-strip"><span>network <b data-telemetry="network">--</b></span><span>power <b data-telemetry="power">--</b></span><span>nodes <b data-telemetry="nodes">--</b></span><span>jobs <b data-telemetry="jobs">--</b></span><span>session <b data-telemetry="session">--:--:--</b></span></div>
+<div id="scan"></div>
+</div>
+<script src="js/core.js"></script><script src="js/scene-communications.js"></script>
+<script src="js/systems.js"></script>
+<script src="js/runtime.js"></script>
+</body>
+</html>

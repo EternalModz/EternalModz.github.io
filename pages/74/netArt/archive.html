@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="#020304" name="theme-color"/>
+<title>Human Archive</title>
+<link rel="stylesheet" href="css/app.css"></head>
+<body class="scene-system scene-archive" data-page="archive">
+<div class="system-shell scene-shell" id="ui">
+<header class="scene-header">
+<div><div class="page-marker" data-page-label=""></div><h1>HUMAN ARCHIVE</h1><p>personal records / recovered media / dormant identities</p></div>
+<div class="scene-header-right"><div class="scene-clock" data-scene-clock="">--:--:--</div><div class="assistant-presence"><span class="status-dot"></span><span data-assistant-presence="">assistance service / online</span></div></div>
+</header>
+<div class="assistant-message" data-assistant-message=""></div>
+<main class="scene-content story-layout archive-layout">
+<section class="scene-card story-card archive-index-card">
+<div class="scene-card-head"><div><span class="card-kicker">RECOVERED INDEX</span><strong>personal records</strong></div><span data-archive-count="">2.14 PB indexed</span></div>
+<div class="archive-list story-scroll" data-archive-list="">
+<button class="story-button archive-item" data-record="summer"><strong>A-0142 / SUMMER_2048</strong><small>12 images / 1 location trace / owner dormant</small></button>
+<button class="story-button archive-item" data-record="birthday"><strong>A-2218 / BIRTHDAY_REMINDER</strong><small>calendar object / recurring / recipient unavailable</small></button>
+<button class="story-button archive-item" data-record="school"><strong>A-4107 / COURSEWORK</strong><small>document bundle / 38 revisions / checksum valid</small></button>
+<button class="story-button archive-item" data-record="camera"><strong>A-1804 / FACILITY_REFERENCE</strong><small>image annotation / camera identifier embedded</small></button>
+<button class="story-button archive-item" data-record="impossible"><strong>A-7719 / UNSORTED_MEDIA</strong><small>metadata incomplete / redundancy 3 copies</small></button>
+</div>
+</section>
+<section class="scene-card story-card archive-record-card">
+<div class="scene-card-head"><div><span class="card-kicker">RECORD VIEWER</span><strong data-record-title="">NO RECORD SELECTED</strong></div><span data-record-state="">standby</span></div>
+<div class="archive-preview"><div class="memory-frame" data-memory-frame="">select a recovered record<br/>storage array idle</div></div>
+<dl class="data-list archive-meta">
+<div><dt>owner state</dt><dd data-record-owner="">--</dd></div>
+<div><dt>created</dt><dd data-record-created="">--</dd></div>
+<div><dt>last modified</dt><dd data-record-modified="">--</dd></div>
+<div><dt>storage path</dt><dd data-record-path="">--</dd></div>
+<div><dt>integrity</dt><dd data-record-integrity="">--</dd></div>
+</dl>
+<div class="archive-copy" data-record-copy="">Recovered objects remain cold until requested. Opening a record wakes only the storage path needed to reconstruct it.</div>
+</section>
+<section class="scene-card story-card archive-assistant-card">
+<div class="scene-card-head"><div><span class="card-kicker">ASSISTANCE SERVICE</span><strong>archive interpretation</strong></div><span>contextual</span></div>
+<div class="assistant-observation" data-archive-observation="">I can help identify damaged records.</div>
+<button class="story-button archive-recommend" data-archive-recommend=""><strong>RECOMMENDED RECORD</strong><small data-recommend-copy="">no recommendation yet</small></button>
+</section>
+<a aria-live="polite" class="scene-card scene-route-card archive-route-card" data-flow-exit="cameras" data-page="cameras" hidden="" href="cameras.html">
+<span class="card-kicker">RECOVERED REFERENCE</span><strong>OBSERVATION NETWORK</strong><p data-camera-route-copy="">camera systems / visual telemetry / facility history</p><span class="route-open">inspect reference</span>
+</a>
+</main>
+<div aria-hidden="true" class="telemetry-strip"><span>network <b data-telemetry="network">--</b></span><span>power <b data-telemetry="power">--</b></span><span>nodes <b data-telemetry="nodes">--</b></span><span>jobs <b data-telemetry="jobs">--</b></span><span>session <b data-telemetry="session">--:--:--</b></span></div>
+<div id="scan"></div>
+</div>
+<script src="js/core.js"></script><script src="js/scene-archive.js"></script>
+<script src="js/systems.js"></script>
+<script src="js/runtime.js"></script>
+</body>
+</html>

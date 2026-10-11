@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta content="#020304" name="theme-color"/>
+<title>Population Registry</title>
+<link rel="stylesheet" href="css/app.css"></head>
+<body class="scene-system scene-population" data-page="population">
+<div class="system-shell scene-shell" id="ui">
+<header class="scene-header population-header"><div><div class="page-marker" data-page-label=""></div><h1>POPULATION REGISTRY</h1><p>identity ledger / dormant records / presence reconciliation</p></div><div class="scene-header-right"><div class="assistant-presence"><span class="status-dot"></span><span data-assistant-presence="">assistance service / online</span></div><div class="scene-clock" data-scene-clock="">--:--:--</div></div></header>
+<div class="assistant-message" data-assistant-message=""></div>
+<main class="population-layout scene-content">
+<section class="registry-total"><span>REGISTERED PERSONS</span><strong>8,241,193,441</strong><small>historical global identity ledger</small></section>
+<section aria-label="Population status" class="registry-status">
+<div><span>ACTIVE PERSONS</span><strong data-active-persons="">0</strong></div>
+<div><span>DORMANT</span><strong>8,241,193,440</strong></div>
+<div><span>UNRESOLVED</span><strong data-unresolved-persons="">0</strong></div>
+</section>
+<section aria-label="Active registry entries" class="registry-table">
+<div class="registry-head"><span>identity</span><span>origin</span><span>first detected</span><span>state</span></div>
+<button class="registry-row primary" data-registry-self="" type="button"><span data-session-registry="">REMOTE TERMINAL</span><span>current connection</span><span>now</span><span>active</span></button>
+<button class="registry-row unknown" data-registry-unknown="" hidden="" type="button"><span>UNRESOLVED-0000</span><span>none</span><span>22,491 d ago</span><span>active</span></button>
+</section>
+<section class="registry-detail" data-registry-detail="">
+<span class="card-kicker">RECONCILIATION</span><strong>One active presence is associated with the current remote terminal.</strong><p>No duplicate identities detected.</p>
+</section>
+<a class="registry-exit" data-flow-exit="logs" hidden="" href="logs.html"><span>SYSTEM REQUEST</span><strong>CHECK THE LOGS</strong><small>event history / session evidence</small></a>
+</main>
+<div aria-hidden="true" class="telemetry-strip"><span>network <b data-telemetry="network">--</b></span><span>session <b data-telemetry="session">--:--:--</b></span><span>identity ledger <b>online</b></span></div>
+<div id="scan"></div>
+</div>
+<script src="js/core.js"></script>
+<script src="js/systems.js"></script><script src="js/scene-population.js"></script>
+<script src="js/runtime.js"></script>
+</body></html>

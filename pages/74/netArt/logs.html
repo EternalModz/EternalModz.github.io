@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta content="#010202" name="theme-color"/>
+<title>System Event Log</title>
+<link rel="stylesheet" href="css/app.css"></head>
+<body class="scene-logs" data-page="logs">
+<div class="system-shell logs-shell" id="ui">
+<header class="log-header"><div class="page-marker" data-page-label=""></div><div class="assistant-presence"><span class="status-dot"></span><span data-assistant-presence="">assistance service / online</span></div></header>
+<div class="assistant-message" data-assistant-message=""></div>
+<main class="forensic-log">
+<div class="log-title"><span>SYSTEM EVENT LOG</span><b>read-only / merged sources</b></div>
+<div class="log-column-head"><span>timestamp</span><span>source</span><span>event</span></div>
+<div class="forensic-lines" data-forensic-log=""></div>
+<button class="historical-expand" data-history-expand="" type="button">expand historical range</button>
+<div class="historical-fragment" data-history-fragment="" hidden=""></div>
+<a class="log-exit" data-flow-exit="session" hidden="" href="session.html"><span>SESSION CONTROL</span><strong>DISCONNECT</strong></a>
+</main>
+<div id="scan"></div>
+</div>
+<script src="js/core.js"></script>
+<script src="js/systems.js"></script><script src="js/scene-logs.js"></script>
+<script src="js/runtime.js"></script>
+</body></html>

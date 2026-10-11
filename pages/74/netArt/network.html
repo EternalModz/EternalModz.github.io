@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="#020304" name="theme-color"/>
+<title>Global Network</title>
+<link rel="stylesheet" href="css/app.css"></head>
+<body class="scene-system scene-network" data-page="network">
+<div class="system-shell scene-shell" id="ui">
+<header class="scene-header">
+<div>
+<div class="page-marker" data-page-label=""></div>
+<h1>GLOBAL NETWORK</h1>
+<p>routing fabric / surviving infrastructure / autonomous operation</p>
+</div>
+<div class="scene-header-right">
+<div class="assistant-presence"><span class="status-dot"></span><span data-assistant-presence="">assistance service / online</span></div>
+<div class="scene-clock" data-scene-clock="">--:--:--</div>
+</div>
+</header>
+<div class="assistant-message" data-assistant-message=""></div>
+<main class="network-layout scene-content">
+<section class="scene-card network-map-card">
+<div class="scene-card-head">
+<div><span class="card-kicker">LIVE ROUTING FABRIC</span><strong>618 active nodes</strong></div>
+<span class="scene-state"><i></i> autonomous</span>
+</div>
+<div aria-label="Interactive network node field" class="network-map" data-network-map="">
+<div class="map-grid"></div>
+<div class="map-orbit orbit-one"></div>
+<div class="map-orbit orbit-two"></div>
+<div class="route-line route-a"></div>
+<div class="route-line route-b"></div>
+<div class="route-line route-c"></div>
+<button aria-label="SF-044" class="net-node n-sf active" data-node="SF-044" style="--x:19%;--y:47%"><span></span><em>SF-044</em></button>
+<button aria-label="SEA-008" class="net-node n-sea active" data-node="SEA-008" style="--x:16%;--y:24%"><span></span><em>SEA-008</em></button>
+<button aria-label="DEN-002" class="net-node n-den degraded" data-node="DEN-002" style="--x:30%;--y:42%"><span></span><em>DEN-002</em></button>
+<button aria-label="NYC-011" class="net-node n-ny active" data-node="NYC-011" style="--x:43%;--y:39%"><span></span><em>NYC-011</em></button>
+<button aria-label="LON-006" class="net-node n-lon active" data-node="LON-006" style="--x:50%;--y:26%"><span></span><em>LON-006</em></button>
+<button aria-label="AMS-012" class="net-node n-ams active" data-node="AMS-012" style="--x:58%;--y:37%"><span></span><em>AMS-012</em></button>
+<button aria-label="BER-003" class="net-node n-ber degraded" data-node="BER-003" style="--x:66%;--y:27%"><span></span><em>BER-003</em></button>
+<button aria-label="SIN-004" class="net-node n-sin active" data-node="SIN-004" style="--x:76%;--y:63%"><span></span><em>SIN-004</em></button>
+<button aria-label="TYO-009" class="net-node n-tyo active" data-node="TYO-009" style="--x:87%;--y:42%"><span></span><em>TYO-009</em></button>
+<button aria-label="SYD-008" class="net-node n-syd active" data-node="SYD-008" style="--x:88%;--y:78%"><span></span><em>SYD-008</em></button>
+<button aria-label="NODE-071" class="net-node n-071 offline" data-node="NODE-071" style="--x:69%;--y:18%"><span></span><em>NODE-071</em></button>
+<div class="assistant-cursor" data-assistant-cursor="" style="--x:19%;--y:47%"><span></span></div>
+<div class="packet packet-one"></div>
+<div class="packet packet-two"></div>
+</div>
+<div class="map-footer">
+<span>regional mesh 12</span><span>orbital relays 7</span><span>unresolved routes 3</span><span>clock delta +0.004 ms</span>
+</div>
+</section>
+<section class="scene-card node-inspector" data-node-inspector="">
+<div class="scene-card-head"><div><span class="card-kicker">NODE INSPECTOR</span><strong data-node-name="">SF-044</strong></div><span class="node-badge active" data-node-state="">ACTIVE</span></div>
+<dl class="data-list compact">
+<div><dt>region</dt><dd data-node-region="">NA-WEST</dd></div>
+<div><dt>latency</dt><dd data-node-latency="">37 ms</dd></div>
+<div><dt>power</dt><dd data-node-power="">12.8 kW</dd></div>
+<div><dt>workload</dt><dd data-node-load="">22%</dd></div>
+<div><dt>last packet</dt><dd data-node-packet="">now</dd></div>
+<div><dt>hardware</dt><dd data-node-hardware="">verified</dd></div>
+</dl>
+<div aria-hidden="true" class="signal-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+</section>
+<section class="scene-card route-card">
+<div class="scene-card-head"><div><span class="card-kicker">ROUTE ACTIVITY</span><strong>PACKET EXCHANGE</strong></div><span>live</span></div>
+<div class="route-feed" data-route-feed=""></div>
+</section>
+<section class="scene-card network-summary-card">
+<div class="scene-card-head"><div><span class="card-kicker">NETWORK HEALTH</span><strong>distributed status</strong></div><span data-network-health="">92.40%</span></div>
+<div class="network-summary-grid">
+<div><span>ACTIVE</span><b>618</b><i><em style="width:82%"></em></i></div>
+<div><span>DEGRADED</span><b data-degraded="">14</b><i><em style="width:18%"></em></i></div>
+<div><span>OFFLINE</span><b>91</b><i><em style="width:31%"></em></i></div>
+<div><span>MAINTENANCE</span><b data-telemetry="jobs">34</b><i><em style="width:27%"></em></i></div>
+</div>
+</section>
+<a aria-live="polite" class="scene-card scene-route-card" data-flow-exit="environment" data-page="environment" hidden="" href="environment.html">
+<span class="card-kicker">RELATED SUBSYSTEM</span>
+<strong>ENVIRONMENTAL CONTROL</strong>
+<p>atmosphere / facility sensors / thermal regulation</p>
+<span class="route-open">open route</span>
+</a>
+</main>
+<div aria-hidden="true" class="telemetry-strip">
+<span>network <b data-telemetry="network">--</b></span>
+<span>power <b data-telemetry="power">--</b></span>
+<span>nodes <b data-telemetry="nodes">--</b></span>
+<span>jobs <b data-telemetry="jobs">--</b></span>
+<span>session <b data-telemetry="session">--:--:--</b></span>
+</div>
+<div id="scan"></div>
+</div>
+<script src="js/core.js"></script><script src="js/scene-network.js"></script>
+<script src="js/systems.js"></script>
+<script src="js/runtime.js"></script>
+</body>
+</html>

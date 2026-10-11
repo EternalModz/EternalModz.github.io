@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="#020304" name="theme-color"/>
+<title>Remote Operations Terminal</title>
+<link rel="stylesheet" href="css/app.css"></head>
+<body class="scene-index" data-page="index">
+<button aria-label="Connect to remote operations terminal" id="start" type="button">
+<span aria-hidden="true" class="connect-glyph"></span>
+<span class="connect-title">Enter Continuity System</span>
+<span class="connect-meta">spatial audio + assistance voice</span>
+</button>
+<div class="system-shell index-shell" id="ui">
+<header class="terminal-header">
+<div class="page-marker" data-page-label=""></div>
+<div class="header-status">
+<span class="terminal-clock" data-terminal-clock="">--:--:--</span>
+<div class="assistant-presence">
+<span class="status-dot"></span>
+<span data-assistant-presence="">assistance service / online</span>
+</div>
+</div>
+</header>
+<div class="assistant-message" data-assistant-message=""></div>
+<div aria-hidden="true" class="boot-sequence" data-boot-sequence="">
+<div class="boot-line" data-boot-line="0"><span>transport</span><b>establishing</b></div>
+<div class="boot-line" data-boot-line="1"><span>clock synchronization</span><b>pending</b></div>
+<div class="boot-line" data-boot-line="2"><span>telemetry</span><b>pending</b></div>
+<div class="boot-line" data-boot-line="3"><span>archive index</span><b>pending</b></div>
+<div class="boot-line" data-boot-line="4"><span>audio environment</span><b>pending</b></div>
+</div>
+<main aria-label="Remote operations terminal" class="terminal-grid">
+<section aria-label="Network core status" class="terminal-card core-card">
+<div class="card-kicker">AUTONOMOUS NETWORK OPERATIONS</div>
+<div class="core-heading">
+<div>
+<h1>REMOTE TERMINAL</h1>
+<p>persistent infrastructure access / supervisory read channel</p>
+</div>
+<div class="core-state"><span class="status-dot"></span>OPERATIONAL</div>
+</div>
+<div aria-hidden="true" class="core-visual">
+<div class="core-ring ring-a"></div>
+<div class="core-ring ring-b"></div>
+<div class="core-ring ring-c"></div>
+<div class="core-center">
+<span>CORE</span>
+<b data-core-health="">92.40</b>
+<small>integrity %</small>
+</div>
+<i class="core-node n1"></i><i class="core-node n2"></i><i class="core-node n3"></i>
+<i class="core-node n4"></i><i class="core-node n5"></i><i class="core-node n6"></i>
+</div>
+<div class="core-metrics">
+<div class="metric"><span>network health</span><b data-telemetry="network">--</b><i><em data-meter="network"></em></i></div>
+<div class="metric"><span>power reserve</span><b data-telemetry="power">--</b><i><em data-meter="power"></em></i></div>
+<div class="metric"><span>active nodes</span><b data-telemetry="nodes">--</b><i><em data-meter="nodes"></em></i></div>
+<div class="metric"><span>maintenance</span><b data-telemetry="jobs">--</b><i><em data-meter="jobs"></em></i></div>
+</div>
+</section>
+<section aria-label="Connection state" class="terminal-card status-card">
+<div class="card-title">CONNECTION STATE</div>
+<dl class="status-list">
+<div><dt>terminal</dt><dd data-session-id="">--------</dd></div>
+<div><dt>transport</dt><dd>encrypted / stable</dd></div>
+<div><dt>uplink</dt><dd data-uplink-status="">nominal</dd></div>
+<div><dt>active connections</dt><dd class="connection-count" data-connection-count="">1</dd></div>
+<div><dt>session age</dt><dd data-telemetry="session">--:--:--</dd></div>
+</dl>
+<div aria-hidden="true" class="micro-wave">
+<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+</div>
+</section>
+<section aria-label="Live system activity" class="terminal-card activity-card">
+<div class="card-title-row"><div class="card-title">LIVE ACTIVITY</div><span>rolling buffer</span></div>
+<div class="activity-feed" data-index-activity=""></div>
+</section>
+<section aria-label="Available subsystems" class="terminal-card subsystem-card"><div class="card-title-row"><div class="card-title">ROUTE RESOLUTION</div><span>progressive access</span></div><div class="route-gate-index">
+<div class="route-gate-copy"><span class="card-kicker">CURRENTLY RESOLVED</span><strong>GLOBAL NETWORK</strong><p>The terminal exposes routes only when a dependency is discovered.</p></div>
+<a class="primary-route" data-flow-exit="network" href="network.html?source=terminal"><span>01</span><b>OPEN GLOBAL NETWORK</b><small>routing fabric / surviving nodes</small><i></i></a>
+<div aria-label="Unresolved subsystems" class="locked-routes"><span>02 / unresolved</span><span>03 / unresolved</span><span>04 / unresolved</span><span>05 / unresolved</span><span>06 / unresolved</span><span>07 / unresolved</span><span>08 / unresolved</span><span>09 / unresolved</span></div>
+</div></section>
+<section aria-label="Infrastructure overview" class="terminal-card infrastructure-card">
+<div class="card-title-row"><div class="card-title">INFRASTRUCTURE</div><span>background processes</span></div>
+<div class="infrastructure-lines">
+<div><span>THERMAL LOOP</span><b data-drift="thermal">18.4 C</b><i><em style="width:62%"></em></i></div>
+<div><span>PACKET FLOW</span><b data-drift="packet">1.82 Tb/s</b><i><em style="width:74%"></em></i></div>
+<div><span>CLOCK DRIFT</span><b data-drift="clock">+0.003 ms</b><i><em style="width:18%"></em></i></div>
+<div><span>ARCHIVE LOAD</span><b data-drift="archive">11.7%</b><i><em style="width:29%"></em></i></div>
+</div>
+</section>
+</main>
+<div aria-hidden="true" class="telemetry-strip">
+<span>network <b data-telemetry="network">--</b></span>
+<span>power <b data-telemetry="power">--</b></span>
+<span>nodes <b data-telemetry="nodes">--</b></span>
+<span>jobs <b data-telemetry="jobs">--</b></span>
+<span>session <b data-telemetry="session">--:--:--</b></span>
+</div>
+<div id="scan"></div>
+</div>
+<script src="js/core.js"></script>
+<script src="js/scene-index.js"></script>
+<script src="js/systems.js"></script>
+<script src="js/runtime.js"></script>
+</body>
+</html>
